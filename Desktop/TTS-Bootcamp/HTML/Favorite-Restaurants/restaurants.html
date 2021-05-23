@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>My Favorite Restaurants</title>
+  </head>
+
+  <body>
+
+    <!-- Introduction text -->
+        <h1>My Five Most Favorite Restaurants in Boone, NC</h1>
+        <p><b class="description">These are the <em>best</em> places to eat in the High Country!</b></p>
+
+    <!-- List of five favorite restaurants -->
+        <h2>If you're in Boone, check out these places for <em>awesome</em> eats:</h2>
+        <ul>
+            <li>
+                <a href="http://thecardinalboone.com" target="_blank">The Cardinal</a>
+            </li>
+            <li>
+                <a href="http://propermeal.com/" target="_blank">Proper</a>
+            </li>
+            <li>
+                <a href="https://www.eatkindlyboone.com/" target="_blank">Kindly Kitchen</a>
+            </li>
+            <li>
+                <a href="https://coyotekitchen.com/" target="_blank">Coyote Kitchen</a>
+            </li>
+            <li>
+                <a href="https://www.stickboybread.com/kitchen" target="_blank">Stick Boy Kitchen</a>
+            </li>
+        </ul>
+
+    <!-- Form to submit more details about clients favorite food and restaurant -->
+        <h2>What is your favorite food?</h2>
+
+    <form action="" method="GET">
+        <label for="favorite-food">Favorite Food: </label>
+        <input type="text" id="name" name="name"><br/>
+        
+        <p>
+            <b class="question">Do you have any dietary restrictions?</b>
+        </p>
+
+        <div>
+            <label for="vegetarian">Vegetarian</label>
+            <input type="checkbox" id="vegetarian" name="vegetarian"><br/>
+
+            <label for="vegan">Vegan</label>
+            <input type="checkbox" id="vegan" name="vegan"><br/>
+
+            <label for="gluten free">Gluten Free</label>
+            <input type="checkbox" id="gluten-free" name="gluten-free"><br/>
+
+            <label for="none">None</label>
+            <input type="checkbox" id="none" name="none"><br/>
+        </div>
+
+        <div>
+            <p>
+            <label for="type">Which of the five restaurants listed above is <em>your</em> favorite?</label>
+                <select id="type" name="type">
+                    <option value="cardinal">The Cardinal</option>
+                    <option value="proper">Proper</option>
+                    <option value="kindly" selected="true">Kindly Kitchen</option>
+                    <option value="coyote">Coyote Kitchen</option>
+                    <option value="stickboy">Stick Boy Kitchen</option>
+                </select>
+            </p>
+        </div>
+
+        <textarea id="explain" name="explain" rows="4" cols="60">Why is that restaurant your favorite?
+        </textarea>
+        <br/><br/>
+
+        <input type="submit" value="Share">
+    </form>
+
+    <!-- Area describing the types of food each restaurant serves -->
+    <div>
+        <p>
+            <h2>
+                Types of Food
+            </h2>
+            <table>
+                <tr align="left">
+                    <th>The Cardinal:</th>
+                    <td>Burgers</td>
+                    <th>Proper:</th>
+                    <td>Southern Comfort</td>
+                </tr>
+                <tr align="left">
+                    <th>Kindly Kitchen:</th>
+                    <td>Plant-Based</td>
+                    <th>Coyote Kitchen:</th>
+                    <td>Burritos</td>
+                </tr>
+                <tr>
+                    <th>Stick Boy Kitchen:</th>
+                    <td>Soup & Sandwiches</td>
+                </tr>
+            </table>
+        </p>
+    </div>
+
+    <p>
+        Check out all the kinds of food that I cook in <a href="my-kitchen.html" target="_self">my own kitchen</a> at home!
+    </p>
+
+    <!-- Contact form -->
+
+    <h2>Want to stay in touch?</h2>
+
+    <form action="mailto:contactform@contactforms.com" method="POST" enctype="text/plain">
+        <label for="name">Name: </label>
+        <input type="text" id="name" name="name"><br/>
+
+        <label for="email">Email: </label>
+        <input type="email" id="email" name="email"><br/>
+
+        <textarea id="comments" name="comments" rows="4" cols="60">Share your thoughts with us!
+        </textarea>
+        <br/><br/>
+
+        <input type="submit" value="Stay Connected">
+    </form>
+
+  </body>
+
+</html>
